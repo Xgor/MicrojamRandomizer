@@ -6,16 +6,21 @@ body
 	margin: 20px auto;
 	font-family: 'Source Sans Pro', sans-serif;
 	padding: 20px;
+	text-align: center;
 }
 
 h1
 {
+    from {background-color: red;}
+    to {background-color: yellow;}
 	color: #349811;
 	font-size: 16px;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	margin: 0;
+
 }
+
 
 h2
 {
@@ -23,7 +28,24 @@ h2
 	font-size: 40px;
 	font-weight: bold;
 	margin: 10px;
+
 }
+
+.result
+{
+	font-size: 60px;
+	animation-name: example;
+	animation-duration: 2s;
+/*	animation-iteration-count:infinite;
+*/
+}
+
+@keyframes example {
+    from {font-size: 40px;}
+    to {font-size: 60px;}
+}
+
+
 button
 {
 
